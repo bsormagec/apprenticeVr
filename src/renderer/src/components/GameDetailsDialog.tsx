@@ -543,11 +543,11 @@ const GameDetailsDialog: React.FC<GameDetailsDialogProps> = ({
                 ) : videoId ? (
                   <div className={styles.youtubeContainer}>
                     <iframe
-                      src={`https://www.youtube.com/embed/${videoId}?autoplay=0`}
+                      src={`https://www.youtube.com/embed/${videoId}?autoplay=0&enablejsapi=1&modestbranding=1&rel=0&origin=app://`}
                       className={styles.youtubePlayer}
                       title="YouTube video player"
                       frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                       allowFullScreen
                       referrerPolicy="strict-origin-when-cross-origin"
                     />
